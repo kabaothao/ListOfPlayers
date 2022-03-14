@@ -2,11 +2,11 @@
 
 namespace MyApp // Note: actual namespace depends on the project name.
 {
-    public class Program
+    public static class Program
     {
         static void Main(string[] args)
         {
-            List<Player> players = new List<Player>();
+            List<Player> players = new();
 
             //Player player1 = new Player("Chad");
             //Player player2 = new Player("Steve");
@@ -16,18 +16,14 @@ namespace MyApp // Note: actual namespace depends on the project name.
             players.Add(new Player("Steve"));
             players.Add(new Player("Bao"));
             players.Add(new Player("Ashley"));
-
-            foreach (Player player in players)
+            for (int i = 0; i < players.Count; i++)
             {
+                Player player = players[i];
                 Console.WriteLine(player);
             }
-
-
-
             Console.ReadKey();
         }
     }
-
 
     class Player
     {

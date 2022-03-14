@@ -1,7 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-
-using System;
+﻿using System;
 
 namespace MyApp // Note: actual namespace depends on the project name.
 {
@@ -11,13 +8,14 @@ namespace MyApp // Note: actual namespace depends on the project name.
         {
             List<Player> players = new List<Player>();
 
-            Player player1 = new Player("Chad");
-            Player player2 = new Player("Steve");
-            Player player3 = new Player("Bao");
+            //Player player1 = new Player("Chad");
+            //Player player2 = new Player("Steve");
+            //Player player3 = new Player("Bao");
 
-            players.Add(player1);
-            players.Add(player2);
-            players.Add(player3);
+            players.Add(new Player("Chad"));
+            players.Add(new Player("Steve"));
+            players.Add(new Player("Bao"));
+            players.Add(new Player("Ashley"));
 
             foreach (Player player in players)
             {
@@ -46,3 +44,8 @@ namespace MyApp // Note: actual namespace depends on the project name.
         }
     }
 }
+
+// See https://aka.ms/new-console-template for more information
+/*
+ List of objects to keep track of the amount of players in our game and their names
+ */
